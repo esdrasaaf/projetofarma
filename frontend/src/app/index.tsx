@@ -1,11 +1,13 @@
 import { Button } from "@/components/Button";
 import { Input } from "@/components/Input";
-import { Link } from "expo-router";
+import { Link, useRouter } from "expo-router";
 import { Image, Text, View, ScrollView, StyleSheet, Dimensions, Platform } from "react-native";
 
 export default function Index() {
+  const router = useRouter();
+      
   const handleLogin = () => {
-    console.log("entrou")
+    router.push("/home")
   }
 
   return (

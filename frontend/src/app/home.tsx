@@ -164,10 +164,12 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     borderColor: "#e5e5e5",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.05,
-    shadowRadius: 2,
+    boxShadow: [{
+      offsetX: 0,
+      offsetY: 1,
+      blurRadius: 2,
+      color: 'rgba(0, 0, 0, 0.05)',
+    }],
     elevation: 2,
   },
   medName: {
